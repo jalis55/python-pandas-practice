@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>vtp2</title>
+<title>How do I rename columns in a pandas DataFrame?</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,7 +13116,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="how-to-select-pandas-serise-from-a-dataframe">how to select pandas serise from a dataframe<a class="anchor-link" href="#how-to-select-pandas-serise-from-a-dataframe">&#182;</a></h1>
+<h1 id="How-do-I-rename-columns-in-a-pandas-DataFrame?">How do I rename columns in a pandas DataFrame?<a class="anchor-link" href="#How-do-I-rename-columns-in-a-pandas-DataFrame?">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://www.youtube.com/watch?v=0uBirYFhizE&amp;list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y&amp;index=5">https://www.youtube.com/watch?v=0uBirYFhizE&amp;list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y&amp;index=5</a></p>
+
 </div>
 </div>
 </div>
@@ -13138,7 +13146,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/uforeports&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/uforeports&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13148,7 +13156,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13164,84 +13172,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>City,Colors Reported,Shape Reported,State,Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Ithaca,,TRIANGLE,NY,6/1/1930 22:00</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Willingboro,,OTHER,NJ,6/30/1930 20:00</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Holyoke,,OVAL,CO,2/15/1931 14:00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Abilene,,DISK,KS,6/1/1931 13:00</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>New York Worlds Fair,,LIGHT,NY,4/18/1933 19:00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/uforeports&#39;</span><span class="p">)</span>
-<span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13325,10 +13256,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">ufo</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
     </div>
@@ -13341,13 +13272,231 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>pandas.core.frame.DataFrame</pre>
+<pre>Index([&#39;City&#39;, &#39;Colors Reported&#39;, &#39;Shape Reported&#39;, &#39;State&#39;, &#39;Time&#39;], dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Colors Reported&#39;</span><span class="p">:</span><span class="s1">&#39;Colors_Reported&#39;</span><span class="p">,</span><span class="s1">&#39;Shape Reported&#39;</span><span class="p">:</span><span class="s1">&#39;Shape_Reported&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;City&#39;, &#39;Colors_Reported&#39;, &#39;Shape_Reported&#39;, &#39;State&#39;, &#39;Time&#39;], dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo_cols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">,</span><span class="s1">&#39;colors_reported&#39;</span><span class="p">,</span><span class="s1">&#39;shape_reported&#39;</span><span class="p">,</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">ufo_cols</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;city&#39;, &#39;colors_reported&#39;, &#39;shape_reported&#39;, &#39;state&#39;, &#39;time&#39;], dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/uforeports&#39;</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="n">ufo_cols</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>city</th>
+      <th>colors_reported</th>
+      <th>shape_reported</th>
+      <th>state</th>
+      <th>time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ithaca</td>
+      <td>NaN</td>
+      <td>TRIANGLE</td>
+      <td>NY</td>
+      <td>6/1/1930 22:00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Willingboro</td>
+      <td>NaN</td>
+      <td>OTHER</td>
+      <td>NJ</td>
+      <td>6/30/1930 20:00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Holyoke</td>
+      <td>NaN</td>
+      <td>OVAL</td>
+      <td>CO</td>
+      <td>2/15/1931 14:00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Abilene</td>
+      <td>NaN</td>
+      <td>DISK</td>
+      <td>KS</td>
+      <td>6/1/1931 13:00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>New York Worlds Fair</td>
+      <td>NaN</td>
+      <td>LIGHT</td>
+      <td>NY</td>
+      <td>4/18/1933 19:00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -13361,9 +13510,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#ufo[&#39;City&#39;] #or</span>
-<span class="c1">#ufo.City</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">ufo</span><span class="p">[</span><span class="s1">&#39;City&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/uforeports&#39;</span><span class="p">)</span>
+<span class="n">ufo</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">ufo</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+<span class="n">ufo</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
     </div>
@@ -13382,808 +13531,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>pandas.core.series.Series</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="p">[</span><span class="s1">&#39;Colors Reported&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="c1"># dot notation will not work</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[21]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0    NaN
-1    NaN
-2    NaN
-3    NaN
-4    NaN
-Name: Colors Reported, dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;ab&#39;</span><span class="o">+</span><span class="s1">&#39;cd&#39;</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[22]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;abcd&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="p">[</span><span class="s2">&quot;Location&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">ufo</span><span class="p">[</span><span class="s2">&quot;City&quot;</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39;, &#39;</span><span class="o">+</span><span class="n">ufo</span><span class="p">[</span><span class="s2">&quot;State&quot;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[26]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>City</th>
-      <th>Colors Reported</th>
-      <th>Shape Reported</th>
-      <th>State</th>
-      <th>Time</th>
-      <th>Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Ithaca</td>
-      <td>NaN</td>
-      <td>TRIANGLE</td>
-      <td>NY</td>
-      <td>6/1/1930 22:00</td>
-      <td>Ithaca, NY</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Willingboro</td>
-      <td>NaN</td>
-      <td>OTHER</td>
-      <td>NJ</td>
-      <td>6/30/1930 20:00</td>
-      <td>Willingboro, NJ</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Holyoke</td>
-      <td>NaN</td>
-      <td>OVAL</td>
-      <td>CO</td>
-      <td>2/15/1931 14:00</td>
-      <td>Holyoke, CO</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Abilene</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>KS</td>
-      <td>6/1/1931 13:00</td>
-      <td>Abilene, KS</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>New York Worlds Fair</td>
-      <td>NaN</td>
-      <td>LIGHT</td>
-      <td>NY</td>
-      <td>4/18/1933 19:00</td>
-      <td>New York Worlds Fair, NY</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[27]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>City</th>
-      <th>Colors Reported</th>
-      <th>Shape Reported</th>
-      <th>State</th>
-      <th>Time</th>
-      <th>Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Ithaca</td>
-      <td>NaN</td>
-      <td>TRIANGLE</td>
-      <td>NY</td>
-      <td>6/1/1930 22:00</td>
-      <td>Ithaca, NY</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Willingboro</td>
-      <td>NaN</td>
-      <td>OTHER</td>
-      <td>NJ</td>
-      <td>6/30/1930 20:00</td>
-      <td>Willingboro, NJ</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Holyoke</td>
-      <td>NaN</td>
-      <td>OVAL</td>
-      <td>CO</td>
-      <td>2/15/1931 14:00</td>
-      <td>Holyoke, CO</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Abilene</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>KS</td>
-      <td>6/1/1931 13:00</td>
-      <td>Abilene, KS</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>New York Worlds Fair</td>
-      <td>NaN</td>
-      <td>LIGHT</td>
-      <td>NY</td>
-      <td>4/18/1933 19:00</td>
-      <td>New York Worlds Fair, NY</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Valley City</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>ND</td>
-      <td>9/15/1934 15:30</td>
-      <td>Valley City, ND</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Crater Lake</td>
-      <td>NaN</td>
-      <td>CIRCLE</td>
-      <td>CA</td>
-      <td>6/15/1935 0:00</td>
-      <td>Crater Lake, CA</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Alma</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>MI</td>
-      <td>7/15/1936 0:00</td>
-      <td>Alma, MI</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Eklutna</td>
-      <td>NaN</td>
-      <td>CIGAR</td>
-      <td>AK</td>
-      <td>10/15/1936 17:00</td>
-      <td>Eklutna, AK</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Hubbard</td>
-      <td>NaN</td>
-      <td>CYLINDER</td>
-      <td>OR</td>
-      <td>6/15/1937 0:00</td>
-      <td>Hubbard, OR</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Fontana</td>
-      <td>NaN</td>
-      <td>LIGHT</td>
-      <td>CA</td>
-      <td>8/15/1937 21:00</td>
-      <td>Fontana, CA</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Waterloo</td>
-      <td>NaN</td>
-      <td>FIREBALL</td>
-      <td>AL</td>
-      <td>6/1/1939 20:00</td>
-      <td>Waterloo, AL</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Belton</td>
-      <td>RED</td>
-      <td>SPHERE</td>
-      <td>SC</td>
-      <td>6/30/1939 20:00</td>
-      <td>Belton, SC</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Keokuk</td>
-      <td>NaN</td>
-      <td>OVAL</td>
-      <td>IA</td>
-      <td>7/7/1939 2:00</td>
-      <td>Keokuk, IA</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Ludington</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>MI</td>
-      <td>6/1/1941 13:00</td>
-      <td>Ludington, MI</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Forest Home</td>
-      <td>NaN</td>
-      <td>CIRCLE</td>
-      <td>CA</td>
-      <td>7/2/1941 11:30</td>
-      <td>Forest Home, CA</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Los Angeles</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>CA</td>
-      <td>2/25/1942 0:00</td>
-      <td>Los Angeles, CA</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Hapeville</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>GA</td>
-      <td>6/1/1942 22:30</td>
-      <td>Hapeville, GA</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Oneida</td>
-      <td>NaN</td>
-      <td>RECTANGLE</td>
-      <td>TN</td>
-      <td>7/15/1942 1:00</td>
-      <td>Oneida, TN</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Bering Sea</td>
-      <td>RED</td>
-      <td>OTHER</td>
-      <td>AK</td>
-      <td>4/30/1943 23:00</td>
-      <td>Bering Sea, AK</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Nebraska</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>NE</td>
-      <td>6/1/1943 15:00</td>
-      <td>Nebraska, NE</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>LA</td>
-      <td>8/15/1943 0:00</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>LIGHT</td>
-      <td>LA</td>
-      <td>8/15/1943 0:00</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Owensboro</td>
-      <td>NaN</td>
-      <td>RECTANGLE</td>
-      <td>KY</td>
-      <td>10/15/1943 11:00</td>
-      <td>Owensboro, KY</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Wilderness</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>WV</td>
-      <td>1/1/1944 10:00</td>
-      <td>Wilderness, WV</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>San Diego</td>
-      <td>NaN</td>
-      <td>CIGAR</td>
-      <td>CA</td>
-      <td>1/1/1944 12:00</td>
-      <td>San Diego, CA</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Wilderness</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>WV</td>
-      <td>1/1/1944 12:00</td>
-      <td>Wilderness, WV</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Clovis</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>NM</td>
-      <td>4/2/1944 11:00</td>
-      <td>Clovis, NM</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Los Alamos</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>NM</td>
-      <td>6/1/1944 12:00</td>
-      <td>Los Alamos, NM</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Ft. Duschene</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>UT</td>
-      <td>6/30/1944 10:00</td>
-      <td>Ft. Duschene, UT</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>18211</th>
-      <td>Holyoke</td>
-      <td>NaN</td>
-      <td>DIAMOND</td>
-      <td>MA</td>
-      <td>12/28/2000 18:00</td>
-      <td>Holyoke, MA</td>
-    </tr>
-    <tr>
-      <th>18212</th>
-      <td>Carson</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>CA</td>
-      <td>12/28/2000 18:20</td>
-      <td>Carson, CA</td>
-    </tr>
-    <tr>
-      <th>18213</th>
-      <td>Pasadena</td>
-      <td>GREEN</td>
-      <td>FIREBALL</td>
-      <td>CA</td>
-      <td>12/28/2000 19:10</td>
-      <td>Pasadena, CA</td>
-    </tr>
-    <tr>
-      <th>18214</th>
-      <td>Austin</td>
-      <td>NaN</td>
-      <td>FORMATION</td>
-      <td>TX</td>
-      <td>12/29/2000 0:00</td>
-      <td>Austin, TX</td>
-    </tr>
-    <tr>
-      <th>18215</th>
-      <td>El Campo</td>
-      <td>NaN</td>
-      <td>OTHER</td>
-      <td>TX</td>
-      <td>12/29/2000 9:00</td>
-      <td>El Campo, TX</td>
-    </tr>
-    <tr>
-      <th>18216</th>
-      <td>Garden Grove</td>
-      <td>ORANGE</td>
-      <td>LIGHT</td>
-      <td>CA</td>
-      <td>12/29/2000 16:10</td>
-      <td>Garden Grove, CA</td>
-    </tr>
-    <tr>
-      <th>18217</th>
-      <td>Berthoud Pass</td>
-      <td>NaN</td>
-      <td>TRIANGLE</td>
-      <td>CO</td>
-      <td>12/29/2000 19:30</td>
-      <td>Berthoud Pass, CO</td>
-    </tr>
-    <tr>
-      <th>18218</th>
-      <td>Sisterdale</td>
-      <td>NaN</td>
-      <td>DIAMOND</td>
-      <td>TX</td>
-      <td>12/29/2000 20:00</td>
-      <td>Sisterdale, TX</td>
-    </tr>
-    <tr>
-      <th>18219</th>
-      <td>Garden Grove</td>
-      <td>NaN</td>
-      <td>CHEVRON</td>
-      <td>CA</td>
-      <td>12/29/2000 20:30</td>
-      <td>Garden Grove, CA</td>
-    </tr>
-    <tr>
-      <th>18220</th>
-      <td>Shasta Lake</td>
-      <td>BLUE</td>
-      <td>DISK</td>
-      <td>CA</td>
-      <td>12/29/2000 20:30</td>
-      <td>Shasta Lake, CA</td>
-    </tr>
-    <tr>
-      <th>18221</th>
-      <td>Franklin</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>NH</td>
-      <td>12/29/2000 20:50</td>
-      <td>Franklin, NH</td>
-    </tr>
-    <tr>
-      <th>18222</th>
-      <td>Albrightsville</td>
-      <td>NaN</td>
-      <td>OTHER</td>
-      <td>PA</td>
-      <td>12/29/2000 21:00</td>
-      <td>Albrightsville, PA</td>
-    </tr>
-    <tr>
-      <th>18223</th>
-      <td>Greenville</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>SC</td>
-      <td>12/29/2000 22:00</td>
-      <td>Greenville, SC</td>
-    </tr>
-    <tr>
-      <th>18224</th>
-      <td>Eufaula</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>OK</td>
-      <td>12/29/2000 23:30</td>
-      <td>Eufaula, OK</td>
-    </tr>
-    <tr>
-      <th>18225</th>
-      <td>Simi Valley</td>
-      <td>NaN</td>
-      <td>FORMATION</td>
-      <td>CA</td>
-      <td>12/30/2000 10:00</td>
-      <td>Simi Valley, CA</td>
-    </tr>
-    <tr>
-      <th>18226</th>
-      <td>San Francisco</td>
-      <td>NaN</td>
-      <td>FORMATION</td>
-      <td>CA</td>
-      <td>12/30/2000 22:00</td>
-      <td>San Francisco, CA</td>
-    </tr>
-    <tr>
-      <th>18227</th>
-      <td>San Francisco</td>
-      <td>NaN</td>
-      <td>TRIANGLE</td>
-      <td>CA</td>
-      <td>12/30/2000 22:00</td>
-      <td>San Francisco, CA</td>
-    </tr>
-    <tr>
-      <th>18228</th>
-      <td>Kingsville</td>
-      <td>NaN</td>
-      <td>LIGHT</td>
-      <td>TX</td>
-      <td>12/31/2000 4:00</td>
-      <td>Kingsville, TX</td>
-    </tr>
-    <tr>
-      <th>18229</th>
-      <td>Chicago</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>IL</td>
-      <td>12/31/2000 11:45</td>
-      <td>Chicago, IL</td>
-    </tr>
-    <tr>
-      <th>18230</th>
-      <td>Pismo Beach</td>
-      <td>NaN</td>
-      <td>OVAL</td>
-      <td>CA</td>
-      <td>12/31/2000 20:00</td>
-      <td>Pismo Beach, CA</td>
-    </tr>
-    <tr>
-      <th>18231</th>
-      <td>Pismo Beach</td>
-      <td>NaN</td>
-      <td>OVAL</td>
-      <td>CA</td>
-      <td>12/31/2000 20:00</td>
-      <td>Pismo Beach, CA</td>
-    </tr>
-    <tr>
-      <th>18232</th>
-      <td>Lodi</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>WI</td>
-      <td>12/31/2000 20:30</td>
-      <td>Lodi, WI</td>
-    </tr>
-    <tr>
-      <th>18233</th>
-      <td>Anchorage</td>
-      <td>RED</td>
-      <td>VARIOUS</td>
-      <td>AK</td>
-      <td>12/31/2000 21:00</td>
-      <td>Anchorage, AK</td>
-    </tr>
-    <tr>
-      <th>18234</th>
-      <td>Capitola</td>
-      <td>NaN</td>
-      <td>TRIANGLE</td>
-      <td>CA</td>
-      <td>12/31/2000 22:00</td>
-      <td>Capitola, CA</td>
-    </tr>
-    <tr>
-      <th>18235</th>
-      <td>Fountain Hills</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>AZ</td>
-      <td>12/31/2000 23:00</td>
-      <td>Fountain Hills, AZ</td>
-    </tr>
-    <tr>
-      <th>18236</th>
-      <td>Grant Park</td>
-      <td>NaN</td>
-      <td>TRIANGLE</td>
-      <td>IL</td>
-      <td>12/31/2000 23:00</td>
-      <td>Grant Park, IL</td>
-    </tr>
-    <tr>
-      <th>18237</th>
-      <td>Spirit Lake</td>
-      <td>NaN</td>
-      <td>DISK</td>
-      <td>IA</td>
-      <td>12/31/2000 23:00</td>
-      <td>Spirit Lake, IA</td>
-    </tr>
-    <tr>
-      <th>18238</th>
-      <td>Eagle River</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>WI</td>
-      <td>12/31/2000 23:45</td>
-      <td>Eagle River, WI</td>
-    </tr>
-    <tr>
-      <th>18239</th>
-      <td>Eagle River</td>
-      <td>RED</td>
-      <td>LIGHT</td>
-      <td>WI</td>
-      <td>12/31/2000 23:45</td>
-      <td>Eagle River, WI</td>
-    </tr>
-    <tr>
-      <th>18240</th>
-      <td>Ybor</td>
-      <td>NaN</td>
-      <td>OVAL</td>
-      <td>FL</td>
-      <td>12/31/2000 23:59</td>
-      <td>Ybor, FL</td>
-    </tr>
-  </tbody>
-</table>
-<p>18241 rows × 6 columns</p>
-</div>
+<pre>Index([&#39;City&#39;, &#39;Colors_Reported&#39;, &#39;Shape_Reported&#39;, &#39;State&#39;, &#39;Time&#39;], dtype=&#39;object&#39;)</pre>
 </div>
 
 </div>

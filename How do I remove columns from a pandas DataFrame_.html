@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>vtp1</title>
+<title>How do I remove columns from a pandas DataFrame?</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,7 +13116,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="how-to-read-tabular-data">how to read tabular data<a class="anchor-link" href="#how-to-read-tabular-data">&#182;</a></h1>
+<h1 id="How-do-I-remove-columns-from-a-pandas-DataFrame?">How do I remove columns from a pandas DataFrame?<a class="anchor-link" href="#How-do-I-remove-columns-from-a-pandas-DataFrame?">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://www.youtube.com/watch?v=gnUKkS964WQ&amp;list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y&amp;index=6">https://www.youtube.com/watch?v=gnUKkS964WQ&amp;list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y&amp;index=6</a></p>
+
 </div>
 </div>
 </div>
@@ -13135,10 +13143,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">orders</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/chiporders&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/uforeports&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13148,10 +13156,110 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>City</th>
+      <th>Colors Reported</th>
+      <th>Shape Reported</th>
+      <th>State</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ithaca</td>
+      <td>NaN</td>
+      <td>TRIANGLE</td>
+      <td>NY</td>
+      <td>6/1/1930 22:00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Willingboro</td>
+      <td>NaN</td>
+      <td>OTHER</td>
+      <td>NJ</td>
+      <td>6/30/1930 20:00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Holyoke</td>
+      <td>NaN</td>
+      <td>OVAL</td>
+      <td>CO</td>
+      <td>2/15/1931 14:00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Abilene</td>
+      <td>NaN</td>
+      <td>DISK</td>
+      <td>KS</td>
+      <td>6/1/1931 13:00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>New York Worlds Fair</td>
+      <td>NaN</td>
+      <td>LIGHT</td>
+      <td>NY</td>
+      <td>4/18/1933 19:00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">orders</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
     </div>
@@ -13168,76 +13276,9 @@ div#notebook {
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>order_id</th>
-      <th>quantity</th>
-      <th>item_name</th>
-      <th>choice_description</th>
-      <th>item_price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>1</td>
-      <td>Chips and Fresh Tomato Salsa</td>
-      <td>NaN</td>
-      <td>$2.39</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>1</td>
-      <td>Izze</td>
-      <td>[Clementine]</td>
-      <td>$3.39</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1</td>
-      <td>1</td>
-      <td>Nantucket Nectar</td>
-      <td>[Apple]</td>
-      <td>$3.39</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1</td>
-      <td>1</td>
-      <td>Chips and Tomatillo-Green Chili Salsa</td>
-      <td>NaN</td>
-      <td>$2.39</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2</td>
-      <td>2</td>
-      <td>Chicken Bowl</td>
-      <td>[Tomatillo-Red Chili Salsa (Hot), [Black Beans...</td>
-      <td>$16.98</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>(18241, 5)</pre>
 </div>
 
 </div>
@@ -13248,89 +13289,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movieusers</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/movieusers&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Colors Reported&#39;</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movieusers</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[7]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>1|24|M|technician|85711</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2|53|F|other|94043</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>3|23|M|writer|32067</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4|24|M|technician|43537</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>5|33|F|other|15213</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>6|42|M|executive|98101</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13340,8 +13305,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movieusers</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/movieusers&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">&quot;|&quot;</span><span class="p">)</span>
-<span class="n">movieusers</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13377,53 +13341,47 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>1</th>
-      <th>24</th>
-      <th>M</th>
-      <th>technician</th>
-      <th>85711</th>
+      <th>City</th>
+      <th>Shape Reported</th>
+      <th>State</th>
+      <th>Time</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2</td>
-      <td>53</td>
-      <td>F</td>
-      <td>other</td>
-      <td>94043</td>
+      <td>Ithaca</td>
+      <td>TRIANGLE</td>
+      <td>NY</td>
+      <td>6/1/1930 22:00</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>3</td>
-      <td>23</td>
-      <td>M</td>
-      <td>writer</td>
-      <td>32067</td>
+      <td>Willingboro</td>
+      <td>OTHER</td>
+      <td>NJ</td>
+      <td>6/30/1930 20:00</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4</td>
-      <td>24</td>
-      <td>M</td>
-      <td>technician</td>
-      <td>43537</td>
+      <td>Holyoke</td>
+      <td>OVAL</td>
+      <td>CO</td>
+      <td>2/15/1931 14:00</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>5</td>
-      <td>33</td>
-      <td>F</td>
-      <td>other</td>
-      <td>15213</td>
+      <td>Abilene</td>
+      <td>DISK</td>
+      <td>KS</td>
+      <td>6/1/1931 13:00</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>6</td>
-      <td>42</td>
-      <td>M</td>
-      <td>executive</td>
-      <td>98101</td>
+      <td>New York Worlds Fair</td>
+      <td>LIGHT</td>
+      <td>NY</td>
+      <td>4/18/1933 19:00</td>
     </tr>
   </tbody>
 </table>
@@ -13441,98 +13399,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">movieusers</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/movieusers&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">&quot;|&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">movieusers</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;City&#39;</span><span class="p">,</span><span class="s1">&#39;Time&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[10]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>24</td>
-      <td>M</td>
-      <td>technician</td>
-      <td>85711</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>53</td>
-      <td>F</td>
-      <td>other</td>
-      <td>94043</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>23</td>
-      <td>M</td>
-      <td>writer</td>
-      <td>32067</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>24</td>
-      <td>M</td>
-      <td>technician</td>
-      <td>43537</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>33</td>
-      <td>F</td>
-      <td>other</td>
-      <td>15213</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13542,9 +13412,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">users_col</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span><span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="s1">&#39;occu&#39;</span><span class="p">,</span><span class="s1">&#39;zip_code&#39;</span><span class="p">]</span>
-<span class="n">movieusers</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/movieusers&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">&quot;|&quot;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">names</span><span class="o">=</span><span class="n">users_col</span><span class="p">)</span>
-<span class="n">movieusers</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13580,47 +13448,149 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>user_id</th>
-      <th>age</th>
-      <th>occu</th>
-      <th>zip_code</th>
+      <th>Shape Reported</th>
+      <th>State</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <th>0</th>
+      <td>TRIANGLE</td>
+      <td>NY</td>
+    </tr>
+    <tr>
       <th>1</th>
-      <td>24</td>
-      <td>M</td>
-      <td>technician</td>
-      <td>85711</td>
+      <td>OTHER</td>
+      <td>NJ</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>53</td>
-      <td>F</td>
-      <td>other</td>
-      <td>94043</td>
+      <td>OVAL</td>
+      <td>CO</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>23</td>
-      <td>M</td>
-      <td>writer</td>
-      <td>32067</td>
+      <td>DISK</td>
+      <td>KS</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>24</td>
-      <td>M</td>
-      <td>technician</td>
-      <td>43537</td>
+      <td>LIGHT</td>
+      <td>NY</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://bit.ly/uforeports&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ufo</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ufo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>City</th>
+      <th>Colors Reported</th>
+      <th>Shape Reported</th>
+      <th>State</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ithaca</td>
+      <td>NaN</td>
+      <td>TRIANGLE</td>
+      <td>NY</td>
+      <td>6/1/1930 22:00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>New York Worlds Fair</td>
+      <td>NaN</td>
+      <td>LIGHT</td>
+      <td>NY</td>
+      <td>4/18/1933 19:00</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>33</td>
-      <td>F</td>
-      <td>other</td>
-      <td>15213</td>
+      <td>Valley City</td>
+      <td>NaN</td>
+      <td>DISK</td>
+      <td>ND</td>
+      <td>9/15/1934 15:30</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Crater Lake</td>
+      <td>NaN</td>
+      <td>CIRCLE</td>
+      <td>CA</td>
+      <td>6/15/1935 0:00</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Alma</td>
+      <td>NaN</td>
+      <td>DISK</td>
+      <td>MI</td>
+      <td>7/15/1936 0:00</td>
     </tr>
   </tbody>
 </table>
